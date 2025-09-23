@@ -7,5 +7,11 @@ def convert_to_celsius(fahrenheit):
 def convert_to_fahrenheit(celsius):
     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
-print(convert_to_celsius(4))
-print(convert_to_fahrenheit(5))
+temp = int(input("Enter the temperature to convert: "))
+state = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
+if state == "celsius":
+    print(convert_to_fahrenheit(temp))
+elif state == "fahrenheit":
+    print(convert_to_celsius(temp))
+else:
+    print("Invalid input")
