@@ -37,10 +37,10 @@ class Library:
         self.books = []
 
     def add_book(self, book):
-        self.book.append(book)
+        self.books.append(book)
 
     def list_books(self):
-        for book in self.book:
+        for book in self.books:
             print((book))
 
 
