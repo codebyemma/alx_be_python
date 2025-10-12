@@ -20,15 +20,16 @@ class EBook(Book):
 
 
 class PrintBook(Book):
-    def __init__(self, title, author, page):
+    def __init__(self, title, author, page_count):
         super().__init__(title, author)
-        self.page = page
+        self.page_count = page_count
+
 
     def file_size(self):
-        print(f"page num {self.page}")
+        print(f"page num {self.page_count}")
 
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 class Library:
